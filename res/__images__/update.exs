@@ -16,7 +16,7 @@ model = Resource.param(:model)
 end
 
 action do
-  apply(service, function, Input.get())
+  apply(service, function, [Input.get()])
   transition_to(after_update, params)
 end
 
