@@ -6,7 +6,7 @@ user_id = Auth.user_id
 
 action do
   %{
-    "account" => user_id &&& link_to("./users/:user", user: user_id),
+    "account" => user_id &&& link_to("./users/@user", user: user_id),
     "translations" => link_to("./translations"),
   }
 end
